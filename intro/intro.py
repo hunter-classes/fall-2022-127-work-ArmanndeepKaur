@@ -16,5 +16,5 @@ a = 3
 b = a 
 print("a:", a, "b:", b) #use commas to separate 
 
-a = 25 '''an assignment telling to evaluate the right side and store that value in the memory reffered to by the name on the left hand side'''
+a = 25 #an assignment telling to evaluate the right side and store that value in the memory reffered to by the name on the left hand side
 print("a:", a, "b:", b)
