@@ -22,7 +22,7 @@ hexagon(ann, 0, 0, 2, "#f37736", 100)
 def ngon(t, numsides, x, y, color, width, sidelen):
     t.penup()
     t.goto(x,y)
-    t.width(w)
+    t.width(width)
     t.color(color)
     t.pendown()
     
@@ -31,9 +31,9 @@ def ngon(t, numsides, x, y, color, width, sidelen):
     #     t.left(40)
 
 #Use of numsides
-  for i in range(numsides):
-    t.forward(sidelen)
-    t.right(360/numsides)
+    for i in range(numsides):
+      t.forward(sidelen)
+      t.right(360/numsides)
 
 anna = turtle.Turtle()
 ngon(anna, 5, 23, 23, "blue", 3, 80)
