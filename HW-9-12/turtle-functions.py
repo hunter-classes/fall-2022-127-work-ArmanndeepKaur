@@ -3,9 +3,9 @@ import turtle
 #Draw a Hexagon with the same parameters as square and triangle 
 def hexagon(t, x, y, w, color, sidelen):
    t.penup()
-   t.goto(0,0)
-   t.width(2)
-   t.color("#f37736")
+   t.goto(x,y)
+   t.width(w)
+   t.color(color)
    t.pendown()
     
    for i in range(6):
@@ -21,9 +21,9 @@ hexagon(ann, 0, 0, 2, "#f37736", 100)
 #Draw a ngon with parameters(t, numsides, x, y, color, width, sideln)
 def ngon(t, numsides, x, y, color, width, sidelen):
     t.penup()
-    t.goto(23,23)
-    t.width(3)
-    t.color("blue")
+    t.goto(x,y)
+    t.width(w)
+    t.color(color)
     t.pendown()
     
     for i in range(9):
