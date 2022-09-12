@@ -26,12 +26,17 @@ def ngon(t, numsides, x, y, color, width, sidelen):
     t.color(color)
     t.pendown()
     
-    for i in range(9):
-        t.forward(sidelen)
-        t.left(40)
+    # for i in range(9):
+    #     t.forward(sidelen)
+    #     t.left(40)
+
+#Use of numsides
+  for i in range(numsides):
+    t.forward(sidelen)
+    t.right(360/numsides)
 
 anna = turtle.Turtle()
-ngon(anna, 9, 23, 23, "blue", 3, 50)
+ngon(anna, 5, 23, 23, "blue", 3, 80)
 
 
 wn.mainloop()
