@@ -1,22 +1,26 @@
 #Chapter 7 Exercise 7 
+import math 
+
 def is_even(n):
   '''
   n: an integer value 
   returns: true if n is even, false otherwise
-  '''
-  #pass = passing to the next statement; a placeholder 
-  #None = it means nothing, it doesn't exist 
+  ''' 
   
   if n % 2 == 0:
-        return True #result = True
+        return True 
   else:
-        return False #result = False 
-        #return result
+        return False  
+        
 print("Even Tests")
 result = is_even(10)
 print("Result for 10 is:", result)
 result = is_even(11)
 print("Result for 11 is:", result)
+
+#result = True
+#result = False
+#return result
 # print(is_even(8))
 # print(is_even(13))
 # print(is_even(100))
@@ -31,6 +35,7 @@ result = is_odd(10)
 print("Result for 10 is:", result)
 result = is_odd(11)
 print("Result for 11 is:", result)
+
 #     if n % 2 != 0:
 #         result = True
 #     else:
@@ -74,7 +79,6 @@ print(hello_name("Bob"))
 #make_out_word <<word>>
 def make_out_word(put, word):
   return out[:2] + word + out[2:]
-print(make_out_word("YAY"))
 
 
 #first_two
