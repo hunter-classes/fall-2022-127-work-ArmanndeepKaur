@@ -27,10 +27,27 @@ print(is_odd(20))
 
 
 #Chapter 7 Exercise 10
+def is_rightangled(a, b, c):
+  if abs(c**2 - a**2 + b**2) < 0.001: 
+   is_rightangled = True
+  else:
+    is_rightangled = False
+
+  return is_rightangled
+  
+print(is_rightangled(1.0, 1.5, 2.0))
+
+  
 #Chapter 7 Exercise 11
+def is_rightangled(a, b, c):
+  if a > b and a > c:
+        is_rightangled = abs(a**2 - c**2 + a**2) < 0.001
+  elif b > a and b > c:
+        is_rightangled = abs(b**2 - c**2 + b**2) < 0.001
+  else:
+        is_rightangled = abs(c**2 - b**2 + a**2) < 0.001
 
-
-
+  return is_rightangled
 
 
 
