@@ -35,8 +35,6 @@ def is_rightangled(a, b, c):
 
   return is_rightangled
   
-print(is_rightangled(1.0, 1.5, 2.0))
-
   
 #Chapter 7 Exercise 11
 def is_rightangled(a, b, c):
