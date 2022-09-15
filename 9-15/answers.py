@@ -1,51 +1,65 @@
 #Chapter 7 Exercise 7 
 def is_even(n):
-    if n % 2 == 0:
-        result = True
-    else:
-        result = False
-    
-    return result
-
-print(is_even(8))
-print(is_even(13))
-print(is_even(100))
+  '''
+  n: an integer value 
+  returns: true if n is even, false otherwise
+  '''
+  #pass = passing to the next statement; a placeholder 
+  #None = it means nothing, it doesn't exist 
+  
+  if n % 2 == 0:
+        return True #result = True
+  else:
+        return False #result = False 
+        #return result
+print("Even Tests")
+result = is_even(10)
+print("Result for 10 is:", result)
+result = is_even(11)
+print("Result for 11 is:", result)
+# print(is_even(8))
+# print(is_even(13))
+# print(is_even(100))
 
 
 #Chapter 7 Exercise 8
 def is_odd(n):
-    if n % 2 != 0:
-        result = True
-    else:
-        result = False
-        
-    return result
+  return not(is_even(n))
 
-print(is_odd(9))
-print(is_odd(127))
-print(is_odd(20))
+print("Odd Tests")
+result = is_odd(10)
+print("Result for 10 is:", result)
+result = is_odd(11)
+print("Result for 11 is:", result)
+#     if n % 2 != 0:
+#         result = True
+#     else:
+#         result = False  
+#     return result
+# print(is_odd(9))
+# print(is_odd(127))
+# print(is_odd(20))
 
 
 #Chapter 7 Exercise 10
 def is_rightangled(a, b, c):
-  if abs(c**2 - a**2 + b**2) < 0.001: 
-   is_rightangled = True
-  else:
-    is_rightangled = False
+  '''
+  c is the longest side
+  '''
+  return a*a + b*b == c*c
 
-  return is_rightangled
-  
-  
+
 #Chapter 7 Exercise 11
-def is_rightangled(a, b, c):
-  if a > b and a > c:
-        is_rightangled = abs(a**2 - c**2 + a**2) < 0.001
-  elif b > a and b > c:
-        is_rightangled = abs(b**2 - c**2 + b**2) < 0.001
-  else:
-        is_rightangled = abs(c**2 - b**2 + a**2) < 0.001
+def is_rightangled2(a, b, c):
+  '''
+  Any order for sides 
+  '''
+  return is_rightangled2(a, b, c) or \
+          is_rightangled2(b, c, a) or \ 
+          is_rightangled2(a, c, b)
 
-  return is_rightangled
+print(is_rightangled(5,3,4))
+print(is_rightangled2(5,3,4))
 
 
 
