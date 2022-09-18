@@ -38,9 +38,9 @@ def piglatin(word):
   returns: a new string with the word converted to piglatin 
   """ 
 
-  constant_first = word[1].upper() + word[2:7] + word[0] + "ay"
+  consonent_first = word[1].upper() + word[2:7] + word[0] + "ay"
 
-  result = constant_first
+  result = consonent_first
   return result
 
 
