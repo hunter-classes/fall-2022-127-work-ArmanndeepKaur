@@ -1,3 +1,5 @@
+
+#Funtion 1 
 def bondify(name):
     """
     input: a string in the form "first last"
@@ -25,3 +27,22 @@ def bondify(name):
 # Test bondify
 result = bondify("james bond")
 print("james bond --> ", result) 
+
+
+
+
+#Function 2
+def piglatin(word):
+  """
+  input: a string representing a word 
+  returns: a new string with the word converted to piglatin 
+  """ 
+
+  constant_first = word[1].upper() + word[2:7] + word[0] + "ay"
+
+  result = constant_first
+  return result
+
+
+result = piglatin("morning")
+print("morning --> ", result)
