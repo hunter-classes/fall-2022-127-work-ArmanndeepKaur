@@ -32,17 +32,53 @@ print("james bond --> ", result)
 
 
 #Function 2
-def piglatin(word):
+def piglatinify(word):
+  first = word[0]
+  if first in 'aeiou':
+    result = word + 'yay'
+  else:
+    #move the first letter to end and add 'ay'
+    result = word[1:]+first+'ay'
+
+  return result
+
+
+#Testing 
+test_word = "hello"
+result = piglatinify(test_word)
+print(test_word," -> ",result)
+
+test_word = "able"
+result = piglatinify(test_word)
+print(test_word," -> ",result)
+
+test_word = "Cable"
+result = piglatinify(test_word)
+print(test_word," -> ",result)
+
+test_word = "Able."
+result = piglatinify(test_word)
+print(test_word," -> ",result)
+
+test_word = "cable."
+result = piglatinify(test_word)
+print(test_word," -> ",result)
+
+
+
+
+
+
+ #Longer way to convert a word into piglatin 
+'''def piglatin(word):
   """
   input: a string representing a word 
   returns: a new string with the word converted to piglatin 
   """ 
-
+      #Converting the word into piglatin
   consonent_first = word[1].upper() + word[2:7] + word[0] + "ay"
-
   result = consonent_first
   return result
-
-
+      #Testing piglatin
 result = piglatin("morning")
-print("morning --> ", result)
+print("morning --> ", result)'''
