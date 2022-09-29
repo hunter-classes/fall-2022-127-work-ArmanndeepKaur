@@ -35,15 +35,21 @@ print("james bond --> ", result)
 def piglatinify(word):
   first = word[0]
   if first in 'aeiou':
-    result = word + 'yay'
+    #vowel = move the first letter to the end and 'yay'
+    #add a period at the end
+    result = word + 'yay.'
   else:
-    #move the first letter to end and add 'ay'
-    result = word[1:]+first+'ay'
+    #consonent = move the first letter to the end and add 'ay'
+    #add a period at the end
+    result = word[1:]+first+'ay.'
 
+  #Capitalizing 
+  result = result.capitalize()
+  
   return result
 
 
-#Testing 
+#Testing and Punctuating 
 test_word = "hello"
 result = piglatinify(test_word)
 print(test_word," -> ",result)
@@ -57,10 +63,12 @@ result = piglatinify(test_word)
 print(test_word," -> ",result)
 
 test_word = "Able."
+test_word = test_word[:4]
 result = piglatinify(test_word)
 print(test_word," -> ",result)
 
 test_word = "cable."
+test_word = test_word[:5]
 result = piglatinify(test_word)
 print(test_word," -> ",result)
 
