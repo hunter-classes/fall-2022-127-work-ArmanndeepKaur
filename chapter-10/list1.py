@@ -1,3 +1,5 @@
+#Exercise 3 
+
 myList = [76, 92.3, "hello", True, 4, 76]
 #a
 myList.append("apple")
