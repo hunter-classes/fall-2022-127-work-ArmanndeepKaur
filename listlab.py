@@ -25,7 +25,23 @@ randoms ={"Anna", 92.3, "True", "Sam", 92.3, 76, 4, False, "hello"}
 #print(randoms)
 print(randoms.count('sam'))
 del randoms[4:]
-print(randoms)   #working 
+print(randoms)   #works 
+
+
+#A function that return a new list that contains all the add items in the original list
+l = ["a", True, 99, "b" False, 100]
+def add(l):
+  sum = 0
+  for item in l:
+    sum = sum + item
+  return sum 
+
+
+#A function that returns the smallest value in a list 
+k = [1, -1, 20, 11, 8]
+print(min(k)) #write its function later 
+
+
 
 
 
