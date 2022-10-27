@@ -6,3 +6,9 @@ def findLargest(l):
     if num > largest:
       largest = num
   return largest 
+
+
+#Function that returns the frequency of v
+l = [tweleve, five, seven, eleven]
+def freq(l,v):
+  ...
