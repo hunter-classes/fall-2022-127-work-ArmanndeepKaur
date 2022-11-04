@@ -12,13 +12,15 @@ nouns = ['park', 'book', 'bus', 'mountain', 'restaurant']
 names = ['Zoe', 'Ann', 'Lea', 'Isa', 'Taj']
 
 #Irene helped me with this part because my code was not printing out all three things (noun, name, verb) at the same time
+
 def madlibs(s):
   story = []
   for word in s.split():
-    story = story + [word.replace("<name>", random.choice(names)).replace("<verb>", random.choice(verbs))
-                   .replace("<noun>", random.choice(nouns))]
+    story = story + [word.replace("<name>", random.choice(names)).replace('<verb>', random.choice(verbs)).replace("<noun>", random.choice(nouns))]
     result = " ".join(story)
-    return result 
+  return result
 
 print(madlibs(s))
+
+
 
