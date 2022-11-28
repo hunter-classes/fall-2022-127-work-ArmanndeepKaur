@@ -27,8 +27,11 @@ print()
 
 #Extra --> Punctuation (handling uppercase/lowercase)
 print("EXTRA/FINAL")
-for letters in input.split('. '):
+input = ('. '.join([letters.lstrip().capitalize() for letters in input.split('.')]))
+print(input)
+
+'''for letters in input.split('. '):
   result = []
   result.append(letters.lstrip().capitalize())
   result = " ".join(result)
-  print(result, end = '. ')
+  print(result, end = '. ')'''
