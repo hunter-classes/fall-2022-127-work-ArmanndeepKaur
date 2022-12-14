@@ -7,9 +7,10 @@ with open('avocado.csv', 'r') as csv_file:
     
 print()
 
-#Finding the Range of different things in the dataset
 import pandas as pd
 df = pd.read_csv("avocado.csv")
+
+#Finding the Range of different things in the datatset
 print("The range of average avacado price is:", df.AveragePrice.max()-df.AveragePrice.min())
 print("The range of total bags:", df.TotalBags.max()-df.TotalBags.min())
 print("The range of small bags:", df.SmallBags.max()-df.SmallBags.min())
