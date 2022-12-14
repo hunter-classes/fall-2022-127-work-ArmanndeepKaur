@@ -27,6 +27,8 @@ print("The frequency of regions:")
 print(df['region'].value_counts())
 
 #Extra
+#KaiMinY helped me with the plotting 
+
 import matplotlib.pyplot as plt 
 
 x = []
@@ -35,11 +37,11 @@ y = []
 with open('avocado.csv', 'r') as csvfile:
   plots = csv.reader(csvfile, delimiter = ",")
   
-for row in plots:
-  x.append(row[12])
-  y.append(row[2])
+  for row in plots:
+    x.append(row[12])
+    y.append(row[2])
 
-plt.plot(x,y)
+plt.bar(x,y, color = 'g', width = 0.72, label = "Year")
 plt.xlabel('Year')
 plt.ylabel('AveragePrice')
 plt.title('Avocado prices in different years')
