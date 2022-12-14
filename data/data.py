@@ -40,8 +40,8 @@ for row in plots:
   y.append(row[2])
 
 plt.plot(x,y)
-plt.xlabel('Average Price')
-plt.ylabel('Year')
+plt.xlabel('Year')
+plt.ylabel('AveragePrice')
 plt.title('Avocado prices in different years')
 plt.legend()
 plt.show()
