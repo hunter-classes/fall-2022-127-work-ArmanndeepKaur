@@ -23,13 +23,13 @@ findNumType(type1, type2);
 //Print Hello World!
   std::cout<<"Hello World!\n"; 
 
-  std::cout<"      \n";
+  std::cout<<"      \n";
 
 //If statement
 int num = 16;
 if(num % 2 == 0)
 {
-  std::count<<"The number is even.\n";
+  std::cout<<"The number is even.\n";
 }
 else
 {
